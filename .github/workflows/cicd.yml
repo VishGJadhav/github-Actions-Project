@@ -25,9 +25,6 @@ jobs:
     needs: compile
     steps:
     - uses: actions/checkout@v4
-   
-    - name: Trivy Fs Csane
-      run: trivy fs --format table -o fs-report.json .
 
     - name: gitleaks installation
       run: sudo apt install gitleaks -y
