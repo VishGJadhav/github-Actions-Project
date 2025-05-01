@@ -26,7 +26,7 @@ public class AlertDemo {
 		driver.switchTo().alert().dismiss();
 		driver.findElement(By.cssSelector("button[onclick='myPromp()']")).click();
 		driver.switchTo().alert().sendKeys("Vishnukant");
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 		driver.switchTo().alert().accept();
 	}
 }
