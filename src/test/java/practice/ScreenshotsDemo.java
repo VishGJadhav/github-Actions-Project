@@ -20,7 +20,7 @@ public class ScreenshotsDemo {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://demoqa.com/buttons");
-		TakesScreenshot ss = (TakesScreenshot)driver;
+		TakesScreenshot ss = (TakesScreenshot)driver; //We downcast the TakesScreenshot because of it is webdriver object
 		File src = ss.getScreenshotAs(OutputType.FILE);
 		File des = new File("C:\\Users\\vjadhav\\Desktop\\CS_AutomationFramework\\com.practice\\demo1.png");
 		
